@@ -42,8 +42,8 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '14850741'))
-API_HASH = environ.get('API_HASH', 'e4e058636be1e24a7c20e681d7178694')
+API_ID = int(environ.get('API_ID', '23512457'))
+API_HASH = environ.get('API_HASH', '8d4be72e436d3439449dd9ef52ea6fb7')
 NOR_IMG = environ.get("NOR_IMG", "")
 BOT_TOKEN = environ.get('BOT_TOKEN', '5834315400:AAEoVMRhMHF__LjjtHP_qihQJqbaj9_lnNw')
 
@@ -61,7 +61,7 @@ MELCOW_VID = environ.get('MELCOW_VID',"")
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5678351425').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6982491971').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001902537144 -1001726192413').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
